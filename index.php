@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        div.box <form-box>
+        <div class="box form-box">
             <?php
             include ("php/config.php");
             if(isset($_POST['submit'])){
@@ -39,7 +39,7 @@
 
             
             }?>
-        </form-box>
+        </div>
     </div>
 </body>
 </html>
