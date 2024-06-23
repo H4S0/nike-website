@@ -30,17 +30,17 @@ const Nav = () => {
         </ul>
         <div className="hidden max-lg:block">
           <img
+            className="cursor-pointer"
             src={hamburger}
             alt="hamburger"
             width={25}
             height={25}
             onClick={toggleMenu}
-            className="cursor-pointer"
           />
         </div>
       </nav>
       {isActive === true ? (
-        <ul className="flex flex-col items-center gap-4 mt-4 max-lg:flex">
+        <ul className="bg-slate-300 flex flex-col items-center gap-4 mt-4 max-lg:flex">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
